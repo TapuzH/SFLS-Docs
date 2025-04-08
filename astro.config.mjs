@@ -18,7 +18,10 @@ export default defineConfig({
         			}),
 			],
 			title: '上外附中技术档案库',
-			social: [{ icon: 'information', label: '官网', href: 'https://www.sfls.cn' }],
+			social: [
+                     { icon: 'github', label: 'GitHub', href: 'https://github.com/TapuzH/SFLS-docs' },
+                     { icon: 'information', label: '学校官网', href: 'https://sfls.cn' }
+                     ],
 			sidebar: [
 				{
 					label: 'Guides',
