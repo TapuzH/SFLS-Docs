@@ -12,11 +12,11 @@ export default defineConfig({
 			plugins: [
 				starlightThemeRapide(),
 				starlightKbd({
-          				types: [
-            					{ id: 'mac', label: 'macOS', default: true },
-            					{ id: 'windows', label: 'Windows' },
-          				],
-        			}),
+					globalPicker: false,
+					types: [
+						{ id: 'ma2', label: 'grandMA2', default: true },
+					],
+				}),
 				starlightSidebarTopics([
 					{
 						label: '总则',
@@ -32,11 +32,11 @@ export default defineConfig({
 					{
 						label: '灯光与灯控台',
 						link: '/lighting/overview',
-						icon: 'starlight',
+						icon: 'seti:smarty',
 						items: [
 							{
 								label: '基础灯光知识',
-								autogenerate: { directory: 'lighting/knowledge' },
+								autogenerate: { directory: 'lighting/basic' },
 							},
 							{
 								label: '灯控台操作指南',
@@ -63,6 +63,17 @@ export default defineConfig({
 							{
 								label: '基础播控知识',
 								autogenerate: { directory: 'screen_and_media/knowledge' },
+							},
+						],
+					},
+					{
+						label: '直播、转播与摄像机',
+						link: '/livestream/overview',
+						icon: 'rss',
+						items: [
+							{
+								label: '基础直播知识',
+								autogenerate: { directory: 'livestream/knowledge' },
 							},
 						],
 					},
