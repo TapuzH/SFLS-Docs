@@ -82,7 +82,7 @@ export default defineConfig({
 			title: '上外附中技术档案库',
 			logo: {
 				light: './src/assets/logo-name-blue.png',
-				dark: './src/assets/logo-white.png',
+				dark: './src/assets/logo-name-white.png',
 				replacesTitle: true,
 			},
 			customCss: [
